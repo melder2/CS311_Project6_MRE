@@ -1,0 +1,71 @@
+h1{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    margin-top: 0px;
+}
+
+h2{
+    background-color: black;
+    color: white;
+}
+
+.container {
+    background-color: yellow;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 100px 1fr 50px 1fr 40px 1fr 1fr 1fr;
+  }
+  .cell {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+  }
+  
+.currentassetsbutton{
+    display: flex;
+    justify-content: center;   
+    
+}
+.currentliabilitiesbutton{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.investmentpropertyandequipbutton{
+    display: flex;
+    justify-content: center;
+  
+}
+
+.AddLong-TermLiabilities{
+    display: flex;
+    justify-content: center;
+}
+
+.AddIntangibles{
+    display: flex;
+    justify-content: center;
+}
+
+.TotalPosition{
+    size: large;
+}
+.hide{
+    display: none;
+       
+}
+
+.currentassetsform{
+    justify-content: right;
+    align-items: right;
+}
+
+.footer{
+    background-color: brown;
+    color: white;
+}

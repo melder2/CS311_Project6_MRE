@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Balance Sheet</title>
+    <link rel="stylesheet" href="css/balancesheet.css">
+  </head>
+  
+    <h1><strong>Bellarmine Financials - Balance Sheet Calculator</strong></h1>
+	
+    <body>      
+
+      <div class="container">
+      <div id= "Assets" name="Assets"><h2><strong>Assets</strong></div></body></h2>
+      
+      <div id="Liabilities" name="Liabilities"><h2><strong>Liabilities</strong></div></h2>
+      
+      <div id="CurrentAssets" name="CurrentAssets">Current Assets</div>
+      <div id="CurrentLiabilities" name="CurrentLiabilities">Current Liabilities</div>
+      
+      <div class="hide" id="currentassetsform">
+        <form id="AddCurrentAssets" name="AddCurrentAssets">
+          <label for="cash">Cash:</label>
+          <input type="text" id="cash" name="cash"><br>
+          <label for="inventory">Inventory:</label>
+          <input type="text" id="inventory" name="inventory"><br>
+          <label for="supplies">Supplies:</label>
+          <input type="text" id="supplies" name="supplies"><br>
+          <label for="temporaryinvestments">Temporary Investments:</label>
+          <input type="text" id="temporaryinvestments" name="temporaryinvestments"><br>
+          <p><strong>Total Current Assets: </strong></p>
+        </form>
+        
+      </div>
+      <section id="cabutton">
+      <div id="currentassetsbutton" class="currentassetsbutton">
+        <button type="AddCurrentAssets" onclick="CurrentAssetsClick()">Add Current Assets</button>
+      </div>
+    </section>
+    <div id="currentliabilitiesbutton" class="currentliabilitiesbutton">
+      <button type="AddCurrentLiabilities" style="height: 25px">Add Current Liabilities</button>
+    </div>
+      <section id="AddCurrentLiabilities" class="hide">
+        <form id="AddCurrentLiabilities" name="AddCurrentLiabilities">
+          <label for="accountspayable">Accounts Payable:</label>
+          <input type="text" id="accountspayable" name="accountspayable"><br>
+          <label for="notespayable">Notes Payable:</label>
+          <input type="text" id="notespayable" name="notespayable"><br>
+          <label for="interestpayable">Interest Payable:</label>
+          <input type="text" id="interestpayable" name="interestpayable"><br>
+          <label for="wagespayable">Wages Payable:</label>
+          <input type="text" id="wagespayable" name="wagespayable"><br>
+          <label for="accruedexpenses">Accrued Expenses:</label>
+          <input type="text" id="accruedexpenses" name="accruedexpenses"><br>
+          <p><strong>Total Current Liabilities: </strong></p>
+        </form>
+      </section>
+      <div id="InvestmentPropertyandEquipment" class="InvestmentPropertyandEquipment">Investment Property and Equipment</div>
+      <div id="Long-TermLiabilities" name="Long-TermLiabilities">Long-Term Liabilities</div>
+      
+      <section id="AddInvestmentPropertyandEquipment" class="hide">
+        <form id="AddInvestmentPropertyandEquipment" class="AddInvestmentPropertyandEquipment">
+          <label for="land">Land:</label>
+          <input type="text" id="land" name="land"><br>
+          <label for="buildingandimprovements">Building and Improvements:</label>
+          <input type="text" id="buildingandimprovements" name="buildingandimprovements"><br>
+          <label for="equipment">Equipment:</label>
+          <input type="text" id="equipment" name="equipment"><br>
+          <label for="temporaryinvestments">Temporary Investments:</label>
+          <input type="text" id="temporaryinvestments" name="temporaryinvestments"><br>
+          <p><strong>Total Investment Property and Equipment: </strong></p>
+        </form>
+      </section>
+      <div id="investmentpropertyandequipbutton" class="investmentpropertyandequipbutton">
+        <button type="AddInvestmentPropertyandEquipment" style="height: 25px">Add Investment Property and Equipment</button>
+      </div>
+      <div id="AddLong-TermLiabilities" class="AddLong-TermLiabilities">
+        <button type="AddLong-TermLiabilities" style="height: 25px">Add Long-Term Liabilities</button>
+      </div>
+      <section id="AddLong-TermLiabilities" class="hide">
+        <form id="AddLong-TermLiabilities" name="AddLong-TermLiabilities">
+          <label for="notespayable">Notes Payable: </label>
+          <input type="text" id="notespayable" name="notespayable"><br>
+          <label for="bondspayable">Bonds Payable: </label>
+          <input type="text" id="bondspayable" name="bondspayable"><br>
+          <label for="supplies">Supplies: </label>
+          <p><strong>Total Long-Term Liabilities: </strong></p>
+
+        </form>
+      </section>
+      <div id="Intangibles" name="Intangibles">Intangibles</div>
+      <div id="TotalPosition" name="TotalPosition"><strong>Total Position</strong></div>
+      <div id="AddIntangibles" class="AddIntangibles">
+        <button type="AddIntangibles" style="height: 25px">Add Intangibles</button>
+      </div>
+      <section id="AddIntangibles" class="hide">
+        <form id="AddIntangibles" name="AddIntangibles">
+          <label for="tradenames">Trade Names: </label>
+          <input type="text" id="tradenames" name="tradenames"><br>
+          <label for="goodwill">Goodwill: </label>
+          <input type="text" id="goodwill" name="goodwill"><br>
+          <p><strong>Total Intangibles: </strong></p>
+
+        </form>
+      </section>
+      
+      <div id="calculateposition" class="calculateposition">
+        <button type="calculateposition" style="height: 25px">Calaculate Position</button>
+      </div>
+      
+      <div id="blank1" name="blank1"></div>
+      <div id="TotalAssets" name="TotalAssets">Total Assets:</div>
+      <div id="blank2" name="blank2"></div>
+      <div id="TotalLiabilities" name="TotalLiabilities">Total Liabilities:</div>
+      <div id="blank3" class="blank3"></div>
+      <div id="Position" name="Position">Position:</div> 
+    </section>
+    </div>
+           
+      </body>
+      
+      <section id="AddCurrentAssets1" class="hide">
+      <script src="js/balancesheet.js"></script>
+    </section>
+    <div id="footer" class="footer">©Bellarmine University 2022</div>
+</html>
