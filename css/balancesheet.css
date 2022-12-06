@@ -52,18 +52,12 @@ h2{
     justify-content: center;
 }
 
-.TotalPosition{
-    size: large;
-}
+
 .hide{
     display: none;
        
 }
 
-.currentassetsform{
-    justify-content: right;
-    align-items: right;
-}
 
 .footer{
     background-color: brown;

@@ -20,8 +20,8 @@
       <div id="CurrentAssets" name="CurrentAssets">Current Assets</div>
       <div id="CurrentLiabilities" name="CurrentLiabilities">Current Liabilities</div>
       
-      <div class="hide" id="currentassetsform">
-        <form id="AddCurrentAssets" name="AddCurrentAssets">
+      <section id="AddCurrentAssets" class="hide">
+        <div id="currentassetsform">
           <label for="cash">Cash:</label>
           <input type="text" id="cash" name="cash"><br>
           <label for="inventory">Inventory:</label>
@@ -31,17 +31,19 @@
           <label for="temporaryinvestments">Temporary Investments:</label>
           <input type="text" id="temporaryinvestments" name="temporaryinvestments"><br>
           <p><strong>Total Current Assets: </strong></p>
-        </form>
+        </div>
         
-      </div>
+      </section>
       <section id="cabutton">
       <div id="currentassetsbutton" class="currentassetsbutton">
         <button type="AddCurrentAssets" onclick="CurrentAssetsClick()">Add Current Assets</button>
       </div>
     </section>
+    <section id="clbutton">
     <div id="currentliabilitiesbutton" class="currentliabilitiesbutton">
-      <button type="AddCurrentLiabilities" style="height: 25px">Add Current Liabilities</button>
+      <button type="AddCurrentLiabilities" onclick="CurrentLiabilitiesClick()" style="height: 25px">Add Current Liabilities</button>
     </div>
+  </section>
       <section id="AddCurrentLiabilities" class="hide">
         <form id="AddCurrentLiabilities" name="AddCurrentLiabilities">
           <label for="accountspayable">Accounts Payable:</label>
@@ -73,12 +75,16 @@
           <p><strong>Total Investment Property and Equipment: </strong></p>
         </form>
       </section>
+      <section id="ipbutton">
       <div id="investmentpropertyandequipbutton" class="investmentpropertyandequipbutton">
-        <button type="AddInvestmentPropertyandEquipment" style="height: 25px">Add Investment Property and Equipment</button>
+        <button type="AddInvestmentPropertyandEquipment" onclick="InvestmentPropertyClick()" style="height: 25px" >Add Investment Property and Equipment</button>
       </div>
+    </section>
+    <section id="ltlbutton">
       <div id="AddLong-TermLiabilities" class="AddLong-TermLiabilities">
-        <button type="AddLong-TermLiabilities" style="height: 25px">Add Long-Term Liabilities</button>
+        <button type="AddLong-TermLiabilities" onclick="LongTermLiabilityClick()" style="height: 25px">Add Long-Term Liabilities</button>
       </div>
+    </section>
       <section id="AddLong-TermLiabilities" class="hide">
         <form id="AddLong-TermLiabilities" name="AddLong-TermLiabilities">
           <label for="notespayable">Notes Payable: </label>
@@ -92,9 +98,11 @@
       </section>
       <div id="Intangibles" name="Intangibles">Intangibles</div>
       <div id="TotalPosition" name="TotalPosition"><strong>Total Position</strong></div>
+      <section id="ibutton">
       <div id="AddIntangibles" class="AddIntangibles">
-        <button type="AddIntangibles" style="height: 25px">Add Intangibles</button>
+        <button type="AddIntangibles" onclick="IntangiblesClick()" style="height: 25px">Add Intangibles</button>
       </div>
+    </section>
       <section id="AddIntangibles" class="hide">
         <form id="AddIntangibles" name="AddIntangibles">
           <label for="tradenames">Trade Names: </label>
@@ -105,11 +113,12 @@
 
         </form>
       </section>
-      
+      <section id="cpbutton">
       <div id="calculateposition" class="calculateposition">
-        <button type="calculateposition" style="height: 25px">Calaculate Position</button>
+        <button type="calculateposition" onclick="CalculatePositionClick()" style="height: 25px">Calaculate Position</button>
       </div>
-      
+    </section>
+
       <div id="blank1" name="blank1"></div>
       <div id="TotalAssets" name="TotalAssets">Total Assets:</div>
       <div id="blank2" name="blank2"></div>
