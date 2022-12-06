@@ -1,20 +1,26 @@
 document.getElementById("currentassetsform").style.display = "flex";
 
-
+    const data = document.getElementById("currentassetsform");
+   
+    let box = document.createElement("div");
+    box.classList.add("form");
+    box.setAttribute('id', 'currentassets');
+    let ca = document.createElement("p");
+    text = document.createTextNode(data.value);
+    ca.appendChild(box);
+    box.appendChild(text);
 
 function CurrentAssetsClick() {
    const addCurrentAssets = document.getElementById("currentassetsbutton");
    addCurrentAssets.remove();
    
-   const data = document.getElementById("currentassetsform");
-   
-   let box = document.createElement("div");
-   box.classList.add("form");
-   box.setAttribute('id', 'currentassets');
-   let ca = document.createElement("p");
-   text = document.createTextNode(data.value);
-   ca.appendChild(box);
-   box.appendChild(text);
+
+    //div.innerHTML = GetDynamicTextBox("");
+    let s = document.getElementById("currentassetsform");
+    var cash = document.createElement("input");
+    cash.type = "text";
+    s.appendChild(div);
+    data.appendChild(div);
    
 
 
