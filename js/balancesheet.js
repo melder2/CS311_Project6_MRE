@@ -20,7 +20,7 @@ function CurrentAssetsClick() {
     var cash = document.createElement("input");
     cash.type = "text";
     s.appendChild(div);
-    data.appendChild(div);
+    cash.appendChild(div);
    
 
 
