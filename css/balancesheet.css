@@ -13,10 +13,9 @@ h2{
 
 .container {
     background-color: yellow;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 100px 1fr 50px 1fr 40px 1fr 1fr 1fr;
+    grid-template-rows: 75px 185px 150px 1fr 25px;
   }
   .cell {
     color: black;
@@ -25,39 +24,34 @@ h2{
     padding: 5px;
   }
   
-.currentassetsbutton{
+.CAButton{
     display: flex;
-    justify-content: center;   
-    
-}
-.currentliabilitiesbutton{
-    display: flex;
-    justify-content: center;
-   
+    justify-content: center;  
 }
 
-.investmentpropertyandequipbutton{
+.CLButton{
+    display: flex;
+    justify-content: center;   
+}
+
+.IPButton{
     display: flex;
     justify-content: center;
+    
   
 }
 
-.AddLong-TermLiabilities{
+.LTLButton{
     display: flex;
     justify-content: center;
+    
 }
 
-.AddIntangibles{
+.IButton{
     display: flex;
     justify-content: center;
+
 }
-
-
-.hide{
-    display: none;
-       
-}
-
 
 .footer{
     background-color: brown;

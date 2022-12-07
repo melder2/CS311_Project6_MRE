@@ -15,123 +15,56 @@
     <div class="container">
       <h2 id= "assetsh" class="heading"><strong>Assets</strong></h2>
       <h2 id="liabilitiesh" class="heading"><strong>Liabilities</strong></h2>
-      <h3 id="currentassetsh" class="heading">Current Assets</h3>
-      <h3 id="currentliabilitiesh" class="heading">Current Liabilities</h3>
-      
-    <section id="AddCurrentAssets" class="hide">
-        <div id="currentassetsform">
-          <input type="text" id="cash" name="cash">
-        <!--  <label id="cash" for="cash">Cash:</label>
-          <br>
-          <label for="inventory">Inventory:</label>
-          <input type="text" id="inventory" name="inventory"><br>
-          <label for="supplies">Supplies:</label>
-          <input type="text" id="supplies" name="supplies"><br>
-          <label for="temporaryinvestments">Temporary Investments:</label>
-          <input type="text" id="temporaryinvestments" name="temporaryinvestments"><br>
-          <p><strong>Total Current Assets: </strong></p> -->
-        </div>
-        <div id="currentassetsinput"></div>  
-    </section>
-
-    <section id="cabutton">
-      <div id="currentassetsbutton" class="currentassetsbutton">
-        <button type="AddCurrentAssets" onclick="CurrentAssetsClick()">Add Current Assets</button>
-      </div>
-    </section>
-  
-    <section id="clbutton">
-    <div id="currentliabilitiesbutton" class="currentliabilitiesbutton">
-      <button type="AddCurrentLiabilities" onclick="CurrentLiabilitiesClick()" style="height: 25px">Add Current Liabilities</button>
-    </div>
-  </section>
-      
-      <section id="AddCurrentLiabilities" class="hide">
-          <label for="accountspayable">Accounts Payable:</label>
-          <input type="text" id="accountspayable" name="accountspayable"><br>
-          <label for="notespayable">Notes Payable:</label>
-          <input type="text" id="notespayable" name="notespayable"><br>
-          <label for="interestpayable">Interest Payable:</label>
-          <input type="text" id="interestpayable" name="interestpayable"><br>
-          <label for="wagespayable">Wages Payable:</label>
-          <input type="text" id="wagespayable" name="wagespayable"><br>
-          <label for="accruedexpenses">Accrued Expenses:</label>
-          <input type="text" id="accruedexpenses" name="accruedexpenses"><br>
-          <p><strong>Total Current Liabilities: </strong></p>
-      </section>
-      
-      <h3 id="investmentpropertyh" class="heading">Investment Property and Equipment</h3>
-      <h3 id="longtermliabilitiesh" class="heading">Long-Term Liabilities</h3>
-      
-      <section id="AddInvestmentPropertyandEquipment" class="hide">
-          <label for="land">Land:</label>
-          <input type="text" id="land" name="land"><br>
-          <label for="buildingandimprovements">Building and Improvements:</label>
-          <input type="text" id="buildingandimprovements" name="buildingandimprovements"><br>
-          <label for="equipment">Equipment:</label>
-          <input type="text" id="equipment" name="equipment"><br>
-          <label for="temporaryinvestments">Temporary Investments:</label>
-          <input type="text" id="temporaryinvestments" name="temporaryinvestments"><br>
-          <p><strong>Total Investment Property and Equipment: </strong></p>
-      </section>
-
-      <section id="ipbutton">
-      <div id="investmentpropertyandequipbutton" class="investmentpropertyandequipbutton">
-        <button type="AddInvestmentPropertyandEquipment" onclick="InvestmentPropertyClick()" style="height: 25px" >Add Investment Property and Equipment</button>
-      </div>
-    </section>
-
-    <section id="ltlbutton">
-      <div id="AddLong-TermLiabilities" class="AddLong-TermLiabilities">
-        <button type="AddLong-TermLiabilities" onclick="LongTermLiabilityClick()" style="height: 25px">Add Long-Term Liabilities</button>
-      </div>
-    </section>
-
-      <section id="AddLong-TermLiabilities" class="hide">
-          <label for="notespayable">Notes Payable: </label>
-          <input type="text" id="notespayable" name="notespayable"><br>
-          <label for="bondspayable">Bonds Payable: </label>
-          <input type="text" id="bondspayable" name="bondspayable"><br>
-          <label for="supplies">Supplies: </label>
-          <p><strong>Total Long-Term Liabilities: </strong></p>
-      </section>
-
-      <h3 id="intangiblesh" class="heading">Intangibles</h3>
-      <h3 id="totalpositionh" class="heading"><strong>Total Position</strong></h3>
-      
-    <section id="ibutton">
-      <div id="AddIntangibles" class="AddIntangibles">
-        <button type="AddIntangibles" onclick="IntangiblesClick()" style="height: 25px">Add Intangibles</button>
-      </div>
-    </section>
-      
-    <section id="AddIntangibles" class="hide">
-          <label for="tradenames">Trade Names: </label>
-          <input type="text" id="tradenames" name="tradenames"><br>
-          <label for="goodwill">Goodwill: </label>
-          <input type="text" id="goodwill" name="goodwill"><br>
-          <p><strong>Total Intangibles: </strong></p>
-      </section>
-
-    <section id="cpbutton">
-      <div id="calculateposition" class="calculateposition">
-        <button type="calculateposition" onclick="CalculatePositionClick()" style="height: 25px">Calaculate Position</button>
-      </div>
     
-    </section>
-      <div id="blank1" name="blank1"></div>
-      <h3 id="totalassetsh" class="heading">Total Assets:</h3>
-      <div id="blank2" name="blank2"></div>
-      <h3 id="totalliabilitiesh" class="heading">Total Liabilities:</h3>
-      <div id="blank3" class="blank3"></div>
-      <h3 id="positionh" class="heading">Position:</h3> 
-    </section>
+    <div id="currentassetsform">  
+      <h3 id="currentassetsh" class="heading">Current Assets</h3>
+      <div id="CAButton" class="CAButton">
+        <button id="currentassetsbutton" onclick="CurrentAssetsClick()">Add Current Assets</button>
+      </div>  
     </div>
-           
-      </body>
+  
+    <div id="currentliabilitiesform">
+      <h3 id="currentliabilitiesh" class="heading">Current Liabilities</h3>
+      <div id="CLButton" class="CLButton">
+        <button id="currentliabilitiesbutton" onclick="CurrentLiabilitiesClick()" style="height: 25px">Add Current Liabilities</button>
+      </div>
+    </div>     
+
+    <div id="investmentpropertyform">
+      <h3 id="investmentpropertyh" class="heading">Investment Property and Equipment</h3>
+      <div id="CLButton" class="CLButton">
+        <button id="investmentpropertybutton" onclick="InvestmentPropertyClick()" style="height: 25px" >Add Investment Property and Equipment</button>
+      </div>
+    </div> 
+    
+    <div id="longtermliabilitiesform">
+      <h3 id="longtermliabilitiesh" class="heading">Long-Term Liabilities</h3>
+      <div id="LTLButton" class="LTLButton">
+        <button id="longtermliabilitiesbutton" onclick="LongTermLiabilityClick()" style="height: 25px">Add Long-Term Liabilities</button>
+      </div>
+    </div>
+
+    <div id="intangiblesform">
+      <h3 id="intangiblesh" class="heading">Intangibles</h3>
+      <div id="IButton" class="IButton">
+        <button id="intangiblesbutton" onclick="IntangiblesClick()" style="height: 25px">Add Intangibles</button>
+      </div>
+    </div>
       
-      <section id="AddCurrentAssets1" class="hide">
+    
+
+    <div id="totalposition">
+        <h3 id="totalpositionh" class="heading"><strong>Total Position</strong></h3>
+        <button id="calculateposition" onclick="CalculatePositionClick()" style="height: 25px">Calaculate Position</button>
+        <h3 id="totalassetsh" class="heading">Total Assets:</h3>
+        <h3 id="totalliabilitiesh" class="heading">Total Liabilities:</h3>
+        <h3 id="positionh" class="heading">Position:</h3>
+    </div>
+    
+       
+      </body>
+   
       <script src="js/balancesheet.js"></script>
-    </section>
+  </div>
     <div id="footer" class="footer">©Bellarmine University 2022</div>
 </html>
